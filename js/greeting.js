@@ -18,9 +18,9 @@ function paintGreetings(username) {
     greeting.classList.remove(HIDDEN_CLASSNAME); // 클래스 삭제
 }
 
-const savedUsername = localStorage.getItem(USERNAME_KEY);
+const username = localStorage.getItem(USERNAME_KEY);
 
-if(savedUsername === null) {
+if(username === null) {
     loginForm.classList.remove(HIDDEN_CLASSNAME);
     loginForm.addEventListener("submit", onLoginSubmit);
 } else {
